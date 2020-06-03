@@ -32,6 +32,22 @@
           </nav>
         <main>
           <h1>home page</h1>
+          <table border="3">
+            <tr>
+              <td>name</td>
+              <td>Age</td>
+              <td>Sub</td>
+            </tr>
+            <% for(var i=0;i<students.length;i++){%>
+<tr>
+<td><%= students[i].name %></td>
+<td><%= students[i].Age %></td>
+<td><%= students[i].Sub %></td>
+
+</tr>
+
+            <%  }  %>
+          </table>
         </main>
         <footer>
 
